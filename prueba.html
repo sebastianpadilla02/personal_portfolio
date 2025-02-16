@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #000000, #2a2acb);
+            color: white;
+            overflow: hidden;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .navbar .toggle {
+            display: flex;
+            align-items: center;
+        }
+        .toggle input {
+            margin-left: 10px;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            height: 80vh;
+            padding: 50px;
+        }
+        .content h1 {
+            font-size: 4em;
+            margin: 0;
+        }
+        .content p {
+            margin: 20px 0;
+        }
+        .content button {
+            padding: 10px 20px;
+            background-color: white;
+            color: black;
+            border: none;
+            cursor: pointer;
+        }
+        .social-icons {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .social-icons a {
+            color: white;
+            margin: 10px 0;
+            text-decoration: none;
+        }
+        .circle {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255,255,255,0.1), transparent);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Luna Julio</div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Projects</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="toggle">
+            <span>Light</span>
+            <input type="checkbox">
+            <span>Dark</span>
+            <button>Contact Me</button>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Luna<br>Julio</h1>
+        <p>I'm a full-stack web developer and I work remotely from Bharat</p>
+        <button>LET'S TALK TO ME</button>
+    </div>
+    <div class="social-icons">
+        <a href="#">GitHub</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+    </div>
+    <div class="circle"></div>
+</body>
+</html>
