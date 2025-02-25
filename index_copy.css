@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #0d041a, #6722d7);
+    color: white;
+    overflow: hidden;
+}
+
+.main {
+    display: grid;
+    grid-template-areas: "header" "description";
+    gap: 10px;
+}
+
+@media (max-width: 1200px) {
+    .main{
+        grid-template-areas: "description" "header";
+    }
+}
+
+
+.header {
+    background-color: rgba(0, 0, 0, 0.222);
+    grid-area: header;
+    display: flex;
+}
+
+.main-menu{
+    display: flex;
+    gap: 10px;
+    margin: 0px;
+    padding: 0;
+
+}
+
+.main-menu li{
+    list-style-type: none;
+    background-color: rgba(31, 92, 141, 0.222);
+    margin:0;
+    padding: 10px 20px;
+}
+
+.main-menu li a{
+    font-size: 20px; color:white;
+    display: block;
+    text-decoration: none;
+    transition: margin 3s ease;
+}
+
+.main-menu li a:hover {
+    margin-left: 20px;
+}
+
